@@ -123,8 +123,8 @@ def reverse_list(a=[]):
     for i in range(0, mitad): #hasta el largo de la mitad
         b=a[len(a)-1-i] #comenzamos asignando a b el valor del ultimo elemento y vamos retrocediendo
         c=a[i]#comenzamos asignando a c el valor del primer elemento y vamos avanzando
-        a[i]=b #asignamos al valor del indice 0 el valor del ultimo indice y vamos avanzando en indice hasta la primera mitad
-        a[len(a)-1-i]=c #asignamos al valor del ultimo indice el valor del primer indice y vamos avanzando en indice hasta la primera mitad
+        a[i]=b #asignamos al valor del primer elemento el valor del ultimo elemento y vamos avanzando en indice hasta la primera mitad
+        a[len(a)-1-i]=c #asignamos al valor del ultimo elemento el valor del primer elemento y vamos avanzando en indice hasta la primera mitad
     print(a)  
 x= [37,2,1, -9, 5]    
 reverse_list(x)
