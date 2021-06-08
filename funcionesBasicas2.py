@@ -58,7 +58,7 @@ def length_and_value(tamano, valor):
     lista = []
     for i in range(0, tamano):
         lista.append(valor)  
-    print(lista)         
+    #print(lista)         
     return lista
 tam = 6 
 val = 7
