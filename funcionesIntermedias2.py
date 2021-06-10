@@ -33,13 +33,20 @@ students = [{'first_name':  'Michael', 'last_name' : 'Jordan'},
             {'first_name' : 'John', 'last_name' : 'Rosales'},
             {'first_name' : 'Mark', 'last_name' : 'Guillen'},
             {'first_name' : 'KB', 'last_name' : 'Tonel'}
-            ]
-def iterateDictionary(lista):
+            ] 
+
+def iterateDictionary1(lista):
     for i in range(0,len(lista)):
         for clave, valor in lista[i].items():
             print(clave,'-', valor)           
     return(False)    
-iterateDictionary(students)
+
+def iterateDictionary2(lista):
+    for x in lista:
+        print(f'{x}')           
+    return(False)       
+iterateDictionary1(students)
+iterateDictionary2(students)
 # La salida debería ser: (Está bien si cada clave y valor quedan en dos líneas separadas)
 # Bonus: Hacer que aparezcan exactamente así!
 #first_name - Michael, last_name - Jordan
