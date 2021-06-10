@@ -104,7 +104,7 @@ dojo = {'locations': ['San Jose', 'Seattle', 'Dallas', 'Chicago', 'Tulsa', 'DC',
         }
 def printInfo(dict):
     for key, value in dict.items():
-        print(len(dict[key]),key)
+        print(len(dict[key]),key.upper())
         for i in range(0,len(value)):
             print(value[i])           
     return(False) 
